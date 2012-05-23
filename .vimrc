@@ -1,5 +1,14 @@
+" disable vi compat mode 
 set nocompatible
 
+" enable pathogen
+call pathogen#infect()
+
+" enable filetype
+filetype plugin indent on
+
+
+" generic setup
 set autoindent
 set smartindent
 
@@ -10,7 +19,8 @@ set expandtab
 set showmatch
 
 set vb t_vb=
-set number
+"enable line numbers
+set number 
 
 " turn off tab expansion for php and python
 autocmd FileType php set tabstop=2|set shiftwidth=2|set noexpandtab
