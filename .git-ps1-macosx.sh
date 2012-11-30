@@ -18,6 +18,12 @@
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 # #
 
+enabled=$(git config --get user.prompt)
+if [ "$enabled" == "false" ]; then
+   exit
+fi
+
+
 branch=$(git symbolic-ref HEAD 2>/dev/null \
     || git rev-parse HEAD 2>/dev/null | cut -c1-10 \
 )
