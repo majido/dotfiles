@@ -2,13 +2,16 @@
 	name = Majid Valipour
 	email = majidvp@gmail.com
 [color]
-  diff = auto
-  status = auto
+	diff = auto
+	status = auto
 [alias]
-  st = status -sb
-  sb = status -sb
-  co = checkout
-  df = diff
-  lg = log --graph --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	st = status -sb
+	sb = status -sb
+	co = checkout
+	df = diff
+	lg = log --graph --decorate --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	up = "!git fetch --all -p; git merge --ff-only @{u}"
 [github]
-  user = majido
+	user = majido
+[push]
+	default = simple
