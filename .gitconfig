@@ -15,3 +15,5 @@
 	user = majido
 [push]
 	default = simple
+[core]
+        pager = diff-so-fancy | less --tabs=4 -RFX
